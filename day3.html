@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Marker Debs</title>
+</head>
+<style> 
+h1{ 
+    text-align: center;
+}
+.container{ 
+    background-color: #181717;
+    padding: 10px;
+}
+.marker {
+  width: 300px;
+  height: 35px;
+  margin: 20px auto;
+}
+.red{ 
+    background-color: rgb(201, 22, 22);
+}
+.blue{ 
+    background-color: rgb(12, 9, 163);
+}
+.green{ 
+    background-color: rgb(35, 170, 8);
+}
+.cap {
+  width: 70px;
+  height: 30px;
+}
+.sleeve {
+  width: 110px;
+  height: 30px;
+  border-left-width: 20px;
+  background-color: #ffffff80;
+  border-left: 50px double #180202bf
+}
+.cap, .sleeve {
+  display: inline-block;
+}
+.red {
+  background: linear-gradient(hwb(33 19% 21%), hwb(343 24% 4%), hwb(0 10% 29%));
+box-shadow:10px 10px 10px rgb(201, 22, 22);
+}
+
+.green {
+  background: linear-gradient(hwb(73 7% 23%), hwb(103 17% 13%), #20be57);
+  box-shadow: 10px 10px 10px rgb(96, 224, 96);
+}
+
+.blue {
+  background: linear-gradient(hwb(192 39% 33%), hwb(223 34% 11%), hwb(240 16% 34%));
+  box-shadow: 10px 10px 10px rgba(70, 70, 240, 0.856);
+}
+</style>
+<body>
+    <h1>CSS Color Markers By Debs</h1>
+    <div class="container">
+        </div>
+      <div class="marker red">
+      </div>
+      <div class="cap"></div>
+        <div class="sleeve"></div>
+      </div>
+      <div class="marker green">
+      </div>
+      <div class="cap"></div>
+        <div class="sleeve"></div>
+      </div>
+      <div class="marker blue">
+      </div>
+      <div class="cap"></div>
+        <div class="sleeve"></div>
+      </div>
+    </div>
+</body>
+</html>
