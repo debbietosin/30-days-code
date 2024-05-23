@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page By Debs</title>
+</head>
+<body style="background-image: linear-gradient(to right, rgb(245, 62, 16), rgb(238, 238, 28));">
+    <style>
+        body{
+            height: 100px;
+            margin-top: 100px;
+        }
+    h1{ 
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 45px;
+    }
+    .input{ margin: 100px;
+    }
+    h2{ 
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    }
+label {
+  display: block;
+  margin: 0.7em 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2%;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+    </style>
+    <h1> REGISTRATION FORM</h1>
+    <h2> Please fill out the form with the reqired information</h2>
+    <form method="post" action='https://register-demo.freecodecamp.org'></form>
+    <div class="deb"></div>
+    <div> 
+
+        <fieldset>
+        <form label for="text">Enter Your First Name</label> 
+        <input type="text"placeholder = "First Name">
+        <br>
+        <form> <label for="text">Enter Your Last Name</label> 
+            <input type="text"placeholder = "Last-Name">
+            <br>
+            <label for="text"> Enter Your Email</label> 
+                <input type="text"placeholder= "Email">
+                <br>
+                <label for="text">Create a New Password</label> 
+                    <input type="text"placeholder= "New Password">
+                    <br>
+                    <label for="text"> Confirm New passwword</label>
+                    <input type="text"placeholder ="Confirm New Password">
+</form>
+        </fieldset>
+        <fieldset> 
+<legend> 
+    Account Type
+</legend>
+<label for="paccount"><input id="paccount" type="radio" name="account-type" checked /> Personal</label>
+<label for="baccount"><input id="baccount" type="radio" name="account-type" checked/> Business</label>
+        </fieldset>
+        <fieldset> 
+            <input type="submit" value="Submit">
+        </fieldset>
+
+    <fieldset> 
+       <label for="profile-picture"> Upload your profile picture: <input id="profile-picture" type="file" name="file" /></label><br>
+       <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label> <br>
+       <label for="referrer"> How did you hear about us?</label>
+       <select id="referrer" name="referrer">
+       <option value=""> Select One</option>
+       <option value="1"> Justtified International Church Website</option>
+<option value="2"> Justified International Church Instagram</option>
+<option value="3"> Justtified International Church Member</option>
+<option value="4"> Justified Internatonal Church X</option>
+<option value="5"> Other</option>
+</select>
+</label>
+     </fieldset>
+     <label for="bio"> Provide a Bio</label>
+
+     <textarea id="bio" name="bio" rows="5" cols="30" placeholder="I attended SAP 2024 because..."></textarea>
+        </label>
+      </fieldset>
+<fieldset>
+    <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://justifiedchurch.com/">terms and conditions</a>
+      </label>
+</fieldset>
+<input type="submit" value="Submit" /> <br>
+</form>
+    </div>
+</body>
+</html>
