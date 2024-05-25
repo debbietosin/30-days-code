@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <style> 
+body {
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background: white;
+}
+
+.header {
+  text-align: center;
+  padding: 50px;
+  background-color: black;
+  color:beige;
+  border-bottom: 20px solid white;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+ .gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+</style>
+    <header class="header">
+        <h1>CSS FLEXBOX PHOTO GALLERY</h1>
+        <h3> Beautiful Wedding Cake Pictures</h3>
+      </header>
+      <div class="gallery"> 
+        <img src="wed cake 10.jpg" alt="">
+        <img src="wedding cake 1.jpg" alt="">
+        <img src="wed cake 2.jpg" alt="">
+        <img src="wed cake 3.jpg" alt="">
+        <img src="wed cake 4.jpg" alt="">
+        <img src="wed cake 5.jpg" alt="">
+        <img src="wed cake 6.jpg" alt="">
+        <img src="wed cake 7.jpg" alt="">
+        <img src="wed cake 8.jpg" alt="">
+        <img src="wed cake 9.jpg" alt="">
+      </div>
+</body>
+</html>
