@@ -6,6 +6,155 @@
     <title>Balance Sheet by Debs</title>
 </head>
 <body>
+  <style> 
+  span[class~="sr-only"] {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%);
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  margin: -1px !important;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  color: hsl(240, 56%, 2%);
+}
+
+h1 {
+  max-width: 37rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+
+h1 .flex {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+h1 .flex span:first-of-type {
+  font-size: 0.7em;
+}
+
+h1 .flex span:last-of-type {
+  font-size: 1.2em;
+}
+
+section {
+  max-width: 40rem;
+  margin: 0 auto;
+  border: 3px solid #d0d0d5;
+}
+
+#years {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  z-index: 999;
+  background: #0a0a23;
+  color: #fff;
+  padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+  margin: 0 -2px;
+}
+
+#years span[class] {
+  font-weight: bold;
+  width: 4.5rem;
+  text-align: right;
+}
+
+.table-wrap {
+  padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0;
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+}
+
+table caption {
+  color: #1456a1;
+  font-size: 1.3em;
+  font-weight: normal;
+  position: absolute;
+  top: -2.25rem;
+  left: 0.5rem;
+}
+
+tbody td {
+  width: 100vw;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+tbody th {
+  width: calc(100% - 12rem);
+}
+
+tr[class="total"] {
+  border-bottom: 4px double #0a0a23;
+  font-weight: bold;
+}
+
+tr[class="total"] th {
+  text-align: left;
+  padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+tr.total td {
+  text-align: right;
+  padding: 0 0.2rem;
+font-family: sans-serif;
+font-style: oblique;
+}
+
+tr.total td:nth-of-type(3) {
+  padding-right: 0.5rem;
+}
+
+tr.total:hover {
+  background-color: hsl(14, 91%, 43%);
+}
+
+td.current {
+  font-style: italic;
+}
+
+tr.data {
+  background-image: linear-gradient(to bottom, hsl(240, 5%, 88%) 1.8rem, white 1.8rem);
+}
+
+tr.data th {
+  text-align: left;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+}
+
+tr.data th .description {
+  display: block;
+  font-weight: normal;
+  font-style: italic;
+  padding: 1rem 0 0.75rem;
+  margin-right: -12rem;
+}
+
+tr.data td {
+  vertical-align: top;
+  padding: 0.3rem 0.25rem 0;
+  text-align: right;
+}
+</style>
     <main>
         <section>
           <h1>
@@ -32,28 +181,28 @@
               </thead>
               <tbody>
                 <tr class="data">
-                  <th>Cash <span class="description">This is the cash we currently have on hand.</span></th>
-                  <td>N500000</td>
-                  <td>N700000</td>
-                  <td class="current">N280000</td>
+                  <th>Cash <span class="description">Cash at hand.</span></th>
+                  <td>N50000</td>
+                  <td>N70000</td>
+                  <td class="current">N28000</td>
                 </tr>
                 <tr class="data">
-                  <th>Checking <span class="description">Our primary transactional account.</span></th>
-                  <td>N1000000</td>
-                  <td>N956000 </td>
-                  <td class="current">N980000</td>
+                  <th>Checking <span class="description">Primary Transactional Account.</span></th>
+                  <td>N10000</td>
+                  <td>N95600</td>
+                  <td class="current">N98000</td>
                 </tr>
                 <tr class="data">
-                  <th>Savings <span class="description">Funds set aside for emergencies.</span></th>
-                  <td>N2000000</td>
-                  <td>N2500000</td>
-                  <td class="current">N3500000</td>
+                  <th>Savings <span class="description">Emergency Funds.</span></th>
+                  <td>N20000</td>
+                  <td>N25000</td>
+                  <td class="current">N35000</td>
                 </tr>
                 <tr class="total">
                   <th>Total <span class="sr-only">Assets</span></th>
-                  <td>N5000000</td>
-                  <td>N7000000</td>
-                  <td class="current">N8500000</td>
+                  <td>N80000</td>
+                  <td>N190600</td>
+                  <td class="current">N161000</td>
                 </tr>
               </tbody>
             </table>
@@ -71,30 +220,30 @@
 
                 <tr class="data">
                   <th>Loans <span class="description">The outstanding balance on our startup loan.</span></th>
-                  <td>N100000</td>
-                  <td>N950000</td>
+                  <td>N10000</td>
+                  <td>N5000</td>
                   <td class="current">N0</td>
                 </tr>
 
                 <tr class="data">
                   <th>Expenses <span class="description">Annual anticipated expenses, such as payroll.</span></th>
-                  <td>N150000</td>
-                  <td>N300000</td>
-                  <td class="current">N4500000</td>
+                  <td>N15000</td>
+                  <td>N30000</td>
+                  <td class="current">N45000</td>
                 </tr>
 
                 <tr class="data">
                   <th>Credit <span class="description">The outstanding balance on our credit card.</span></th>
-                  <td>N100000</td>
-                  <td>N200000</td>
-                  <td class="current">$75</td>
+                  <td>N10000</td>
+                  <td>N20000</td>
+                  <td class="current">N10000</td>
                 </tr>
 
                 <tr class="total">
                   <th>Total <span class="sr-only">Liabilities</span></th>
-                  <td>N3500000</td>
-                  <td>N4000000</td>
-                  <td class="current">N5000000</td>
+                  <td>N35000</td>
+                  <td>N55000</td>
+                  <td class="current">N55000</td>
                 </tr>
               </tbody>
             </table>
@@ -113,9 +262,9 @@
               <tbody>
                 <tr class="total">
                   <th>Total <span class="sr-only">Net Worth</span></th>
-                  <td>N-220000</td>
-                  <td>N450000</td>
-                  <td class="current">N553000</td>
+                  <td>N45000</td>
+                  <td>N135600</td>
+                  <td class="current">N106000</td>
                 </tr>
               </tbody>
             </table>
